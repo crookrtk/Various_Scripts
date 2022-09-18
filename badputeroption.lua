@@ -33,19 +33,3 @@ local a = game
 		end
 	end
 	sethiddenproperty(game.Lighting, "Technology", "Compatibility")
-end
-repeat wait()
-	local a = pcall(function()
-		game:WaitForChild("Players").LocalPlayer:WaitForChild("PlayerScripts").ChildAdded:Connect(function(c)
-			if c.Name == "PlayerScriptsLoader"then
-				c.Disabled = true
-			end
-		end)
-	end)
-	if a == true then break end
-until true == false
-game:WaitForChild("Players").LocalPlayer:WaitForChild("PlayerScripts").ChildAdded:Connect(function(c)
-	if c.Name == "PlayerScriptsLoader"then
-		c.Disabled = true
-	end
-end)

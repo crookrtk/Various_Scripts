@@ -37,7 +37,7 @@ local humState16 = true --enables collisions for limbs before the humanoid dies 
 local addtools = true --puts all tools from backpack to character and lets you hold them after reanimation
 local hedafterneck = true --disable aligns for head and enable after neck or torso is removed
 local loadtime = game:GetService("Players").RespawnTime + 0.5 --anti respawn delay
-local method = 3 --reanimation method
+local method = 1 --reanimation method
 --methods:
 --0 - breakJoints (takes [loadtime] seconds to laod)
 --1 - limbs
